@@ -8,10 +8,12 @@ class ResInfo {
         this.data = data;
     }
 
-    set (code = ThrowIfMissing('code'), msg = ThrowIfMissing('msg'), data = ThrowIfMissing('data')) {
+    set (code = ThrowIfMissing('code'), msg = ThrowIfMissing('msg'), data) {
         this.code = code;
         this.msg = msg;
-        this.data = data;
+        if (data !== undefined) {
+            this.data = data;
+        }
         return this;
     }
 

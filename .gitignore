@@ -27,6 +27,7 @@ build/Release
 node_modules
 jspm_packages
 .idea
+test.js
 
 # Optional npm cache directory
 .npm
